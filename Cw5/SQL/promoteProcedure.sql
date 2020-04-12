@@ -33,16 +33,3 @@ begin
 		commit
 	end
 end
-
-
-
-select * from studies
-select * from student
-select * from enrollment
-select count(IdEnrollment) from Studies s, Enrollment e where s.IdStudy= e.IdStudy and s.Name='Bezrobocie' and e.Semester=1
-select count(IdStudy) from Studies where Name='Bezrobocie'
-
-begin tran
-exec PromoteStudents 'Informatyka',3
-
-rollback
