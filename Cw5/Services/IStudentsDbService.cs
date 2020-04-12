@@ -10,5 +10,6 @@ namespace Cw5.Services
         public IEnumerable<Student> GetStudents();
         public Student GetStudent(string id);
         public EnrollStudentResponse EnrollStudent(EnrollStudentRequest request);
+        public EnrollStudentResponse PromoteStudents(PromoteStudentRequest request);
     }
 }

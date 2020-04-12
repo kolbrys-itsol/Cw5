@@ -1,7 +1,6 @@
 ﻿using System;
+using System.Data.SqlClient;
 using Cw5.DTOs.Requests;
-using Cw5.DTOs.Responses;
-using Cw5.Models;
 using Cw5.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,14 +21,29 @@ namespace Cw5.Controllers
         [HttpPost]
         public IActionResult EnrollStudent(EnrollStudentRequest request)
         {
-            // try
-            // {
+
+            try
+            {
                 return Ok(_dbService.EnrollStudent(request));
-            // }
-            // catch (Exception e)
-            // {
-            //     return BadRequest(e.Message);
-            // }
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+
+        }
+
+        [HttpPost("promotions")]
+        public IActionResult PromoteStudent(PromoteStudentRequest request)
+        {
+            try
+            {
+                return Ok(_dbService.PromoteStudents(request));
+            }
+            catch (SqlException e)
+            {
+                return NotFound(e.Message);
+            }
         }
     }
 }

@@ -4,7 +4,6 @@ using System.Data.SqlClient;
 using Cw5.DTOs.Requests;
 using Cw5.DTOs.Responses;
 using Cw5.Models;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Cw5.Services
 
@@ -81,12 +80,10 @@ namespace Cw5.Services
                 command.CommandText = "select * from Studies where Name=@Name";
                 command.Parameters.AddWithValue("Name", request.Studies);
                 connection.Open();
-                // var tran = connection.BeginTransaction();
 
                 var reader = command.ExecuteReader();
                 if (!reader.Read())
                 {
-                    // tran.Rollback();
                     throw new Exception("No such studies: " + request.Studies);
                 }
 
@@ -94,7 +91,6 @@ namespace Cw5.Services
                 reader.Close();
                 if (this.GetStudent(request.IndexNumber) != null)
                 {
-                    // tran.Rollback();
                     throw new Exception("Student " + request.IndexNumber + " already exists");
                 }
 
@@ -144,10 +140,41 @@ namespace Cw5.Services
                 command.Parameters.AddWithValue("BirthDate", request.BirthDate);
                 command.Parameters.AddWithValue("IdEnrollment", enrollmentId);
                 command.ExecuteNonQuery();
-                // tran.Commit();
-                return new EnrollStudentResponse(){LastName = request.LastName,Semester = 1,StartDate = startDate};
+                return new EnrollStudentResponse(){IdEnrollment = enrollmentId,Semester = 1,IdStudy = idStudy,StartDate = startDate};
             }
             
+        
+    
+        }
+
+        public EnrollStudentResponse PromoteStudents(PromoteStudentRequest request)
+        {
+            using (var connection =
+                new SqlConnection("Data Source=db-mssql;Initial Catalog=s18310;Integrated Security=True"))
+            using (var command = new SqlCommand())
+            {
+                command.Connection = connection;
+                connection.Open();
+                command.CommandText = "exec PromoteStudents @Studies,@Semester";
+                command.Parameters.AddWithValue("Studies", request.Studies);
+                command.Parameters.AddWithValue("Semester", request.Semester);
+                var reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    EnrollStudentResponse response = new EnrollStudentResponse
+                    {
+                        IdEnrollment = (int)reader["IdEnrollment"],
+                        Semester = (int)reader["Semester"],
+                        IdStudy = (int)reader["IdStudy"],
+                        StartDate=DateTime.Parse(reader["StartDate"].ToString())
+                    };
+                    return response;
+                }
+            }
+
+            return null;
+
+
         }
     }
 }

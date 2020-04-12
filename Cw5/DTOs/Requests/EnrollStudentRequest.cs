@@ -11,6 +11,7 @@ namespace Cw5.DTOs.Requests
 
         [Required] [MaxLength(10)] public string FirstName { get; set; }
         [Required] [MaxLength(255)] public string LastName { get; set; }
+        [Required]
         public DateTime? BirthDate { get; set; }
         [Required] public string Studies { get; set; }
     }
