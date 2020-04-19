@@ -1,0 +1,6 @@
+Path: / 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Login":"Kowalski"
+}

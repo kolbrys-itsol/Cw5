@@ -10,6 +10,7 @@ namespace Cw5.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly IStudentsDbService _dbService;
+
         public StudentsController(IStudentsDbService iStudentsDbService)
         {
             _dbService = iStudentsDbService;
@@ -23,17 +24,15 @@ namespace Cw5.Controllers
         }
 
 
-        [HttpGet("{id}")]
+        [HttpGet("secured/{id}")]
         public IActionResult GetStudent(string id)
         {
             if (_dbService.GetStudent(id) != null)
             {
                 return Ok(_dbService.GetStudent(id));
             }
-            else
-            {
-                return NotFound("Nie znaleziono studenta o tym id");
-            }
+
+            return NotFound("Nie znaleziono studenta o tym id");
         }
 
         [HttpPost]
@@ -56,7 +55,7 @@ namespace Cw5.Controllers
                 return NotFound("Nie znaleziono studenta o tym id");
             }
         }
-        
+
         [HttpDelete("{id}")]
         public IActionResult DeleteStudent(string id)
         {
@@ -69,7 +68,5 @@ namespace Cw5.Controllers
                 return NotFound("Nie znaleziono studenta o tym id");
             }
         }
-
-
     }
 }
