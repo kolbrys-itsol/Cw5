@@ -80,6 +80,7 @@ namespace Cw5.Services
                 command.CommandText = "select * from Studies where Name=@Name";
                 command.Parameters.AddWithValue("Name", request.Studies);
                 connection.Open();
+                var transaction = connection.BeginTransaction();
 
                 var reader = command.ExecuteReader();
                 if (!reader.Read())
@@ -89,7 +90,7 @@ namespace Cw5.Services
 
                 int idStudy = (int) reader["IdStudy"];
                 reader.Close();
-                if (this.GetStudent(request.IndexNumber) != null)
+                if (GetStudent(request.IndexNumber) != null)
                 {
                     throw new Exception("Student " + request.IndexNumber + " already exists");
                 }
@@ -140,6 +141,7 @@ namespace Cw5.Services
                 command.Parameters.AddWithValue("BirthDate", request.BirthDate);
                 command.Parameters.AddWithValue("IdEnrollment", enrollmentId);
                 command.ExecuteNonQuery();
+                transaction.Commit();
                 return new EnrollStudentResponse(){IdEnrollment = enrollmentId,Semester = 1,IdStudy = idStudy,StartDate = startDate};
             }
             

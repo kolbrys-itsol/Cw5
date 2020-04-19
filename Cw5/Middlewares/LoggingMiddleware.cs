@@ -21,10 +21,6 @@ namespace Cw5.Middlewares
             if (httpContext.Request != null)
             {
                 string[] data = {httpContext.Request.Path,httpContext.Request.Method,httpContext.Request?.QueryString.ToString(),"" };
-                // string path = httpContext.Request.Path;
-                // string method = httpContext.Request.Method;
-                // string queryString = httpContext.Request?.QueryString.ToString();
-                // string body = "";
 
                 using (StreamReader reader
                     = new StreamReader(httpContext.Request.Body, Encoding.UTF8, true, 1024, true))
@@ -33,13 +29,12 @@ namespace Cw5.Middlewares
                     httpContext.Request.Body.Position = 0;
                 }
 
-                var writer = new FileStream("requestLog.txt", FileMode.Create);
+                var writer = new FileStream("requestLog.txt", FileMode.Append);
 
                 using (var streamWriter = new StreamWriter(writer))
                 {
-                    string text =
-                        $"Path: {data[0]} \nQueryString:{data[1]} \nMethod: {data[2]} \nBody Parameters: {data[3]}";
-                    streamWriter.WriteLine(text);
+                    string output = $"Path: {data[0]} \nQueryString:{data[1]} \nMethod: {data[2]} \nBody Parameters: {data[3]}";
+                    streamWriter.WriteLine(output);
                 }
             }
 
