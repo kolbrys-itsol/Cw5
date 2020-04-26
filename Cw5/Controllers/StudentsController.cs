@@ -1,6 +1,7 @@
 ﻿using System;
 using Cw5.Models;
 using Cw5.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cw5.Controllers

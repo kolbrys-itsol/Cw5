@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using Cw5.DTOs.Requests;
 using Cw5.DTOs.Responses;
 using Cw5.Models;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
 namespace Cw5.Services
 
@@ -80,7 +84,6 @@ namespace Cw5.Services
                 command.CommandText = "select * from Studies where Name=@Name";
                 command.Parameters.AddWithValue("Name", request.Studies);
                 connection.Open();
-                var transaction = connection.BeginTransaction();
 
                 var reader = command.ExecuteReader();
                 if (!reader.Read())
@@ -129,8 +132,8 @@ namespace Cw5.Services
                     startDate = (DateTime) reader["StartDate"];
                     enrollmentId = (int) reader["IdEnrollment"];
                     reader.Close();
-
                 }
+
                 Console.WriteLine(enrollmentId);
                 command.CommandText =
                     "insert into Student (IndexNumber,FirstName,LastName,BirthDate,IdEnrollment)" +
@@ -141,12 +144,9 @@ namespace Cw5.Services
                 command.Parameters.AddWithValue("BirthDate", request.BirthDate);
                 command.Parameters.AddWithValue("IdEnrollment", enrollmentId);
                 command.ExecuteNonQuery();
-                transaction.Commit();
-                return new EnrollStudentResponse(){IdEnrollment = enrollmentId,Semester = 1,IdStudy = idStudy,StartDate = startDate};
+                return new EnrollStudentResponse()
+                    {IdEnrollment = enrollmentId, Semester = 1, IdStudy = idStudy, StartDate = startDate};
             }
-            
-        
-    
         }
 
         public EnrollStudentResponse PromoteStudents(PromoteStudentRequest request)
@@ -165,18 +165,119 @@ namespace Cw5.Services
                 {
                     EnrollStudentResponse response = new EnrollStudentResponse
                     {
-                        IdEnrollment = (int)reader["IdEnrollment"],
-                        Semester = (int)reader["Semester"],
-                        IdStudy = (int)reader["IdStudy"],
-                        StartDate=DateTime.Parse(reader["StartDate"].ToString())
+                        IdEnrollment = (int) reader["IdEnrollment"],
+                        Semester = (int) reader["Semester"],
+                        IdStudy = (int) reader["IdStudy"],
+                        StartDate = DateTime.Parse(reader["StartDate"].ToString())
                     };
                     return response;
                 }
             }
 
             return null;
+        }
 
+        public bool CheckPassword(LoginRequest loginRequest)
+        {
+            using (var connection =
+                new SqlConnection("Data Source=db-mssql;Initial Catalog=s18310;Integrated Security=True"))
+            using (var command = new SqlCommand())
+            {
+                command.Connection = connection;
+                connection.Open();
+                command.CommandText = "SELECT Password,Salt FROM Student WHERE @IndexNumber=IndexNumber";
+                command.Parameters.AddWithValue("IndexNumber", loginRequest.Index);
+                var reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    return loginRequest.Password.Equals(reader["Password"].ToString());
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
 
+        public Claim[] GetClaims(string IndexNumber)
+        {
+            using (var connection =
+                new SqlConnection("Data Source=db-mssql;Initial Catalog=s18310;Integrated Security=True"))
+            using (var command = new SqlCommand())
+            {
+                command.Connection = connection;
+                connection.Open();
+
+                command.CommandText = "select Student.IndexNumber,FirstName,LastName,Roles.Name as RoleName" +
+                                      " from StudentRoles join Roles on StudentRoles.RoleId = Roles.RoleId join Student on Student.IndexNumber = StudentRoles.IndexNumber" +
+                                      " where @Index=Student.IndexNumber;";
+                command.Parameters.AddWithValue("Index", IndexNumber);
+
+                var reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    var claims = new List<Claim>();
+                    claims.Add(new Claim(ClaimTypes.NameIdentifier, reader["IndexNumber"].ToString()));
+                    claims.Add(new Claim(ClaimTypes.Name, reader["FirstName"].ToString()));
+                    claims.Add(new Claim(ClaimTypes.Surname, reader["LastName"].ToString()));
+                    claims.Add(new Claim(ClaimTypes.Role, reader["RoleName"].ToString()));
+
+                    while (reader.Read())
+                    {
+                        claims.Add(new Claim(ClaimTypes.Role, reader["Role"].ToString()));
+                    }
+
+                    return claims.ToArray<Claim>();
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        public void SetRefreshToken(string id, string token)
+        {
+            using (var connection =
+                new SqlConnection("Data Source=db-mssql;Initial Catalog=s18310;Integrated Security=True"))
+            using (var command = new SqlCommand())
+            {
+                command.Connection = connection;
+                connection.Open();
+                command.CommandText =
+                    "update Student set RefreshToken = @RefreshToken, TokenExpiration = @TokenExpiration where IndexNumber = @IndexNumber";
+                command.Parameters.AddWithValue("RefreshToken", token);
+                command.Parameters.AddWithValue("TokenExpiration", DateTime.Now.AddMinutes(15));
+                command.Parameters.AddWithValue("IndexNumber", id);
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public string CheckRefreshToken(string token)
+        {
+            using (var connection =
+                new SqlConnection("Data Source=db-mssql;Initial Catalog=s18310;Integrated Security=True"))
+            using (var command = new SqlCommand())
+            {
+                command.Connection = connection;
+                connection.Open();
+
+                command.CommandText = "select IndexNumber from Student WHERE RefreshToken = @RefreshToken AND TokenExpiration > @TokenExpiration";
+                command.Parameters.AddWithValue("RefreshToken", token);
+                command.Parameters.AddWithValue("TokenExpiration", DateTime.Now);
+
+                using var reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    return reader["IndexNumber"].ToString();
+                }
+                else
+                {
+                    return null;
+                }
+            }
         }
     }
 }

@@ -1,6 +1,452 @@
-Path: / 
+Path: /api/students/secured/1 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students/secured/1 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students/secured/1 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students/secured/3 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students/secured/3 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /favicon.ico 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /favicon.ico 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students/ 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students/ 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments 
 QueryString:POST 
 Method:  
 Body Parameters: {
-	"Login":"Kowalski"
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments/login 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	Index:"1",
+	Password:"123"
+
+}
+Path: /api/enrollments/login 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	Index:"1",
+	Password:"123"
+
+}
+Path: /api/enrollments/login 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	Index:"1",
+	Password:"123"
+}
+Path: /api/enrollments/login 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	Index:"1",
+	Password:"123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	Index:"1",
+	Password:"123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	Index:"1",
+	Password:"123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	Index: "1",
+	Password: "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	Index: "1",
+	Password: "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s3000",
+	"Studies": "Informatyka",
+	"FirstName":"Mieszko",
+	"LastName":"Laskowski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s9800",
+	"Studies": "Informatyka",
+	"FirstName":"Jerzy",
+	"LastName":"Kowalski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s9800",
+	"Studies": "Informatyka",
+	"FirstName":"Jerzy",
+	"LastName":"Kowalski",
+	"BirthDate":"2019-01-06T17:16:40"
+
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollments 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
 }
