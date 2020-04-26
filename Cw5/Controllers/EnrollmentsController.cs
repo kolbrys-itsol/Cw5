@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Text;
 using Cw5.DTOs.Requests;
 using Cw5.Services;
@@ -57,7 +58,9 @@ namespace Cw5.Controllers
         public IActionResult Login(LoginRequest loginRequest)
         {
             if (!_dbService.CheckPassword(loginRequest))
+            {
                 return Forbid("Bearer");
+            }
 
             var claims = _dbService.GetClaims(loginRequest.Index);
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SecretKey"]));
@@ -71,7 +74,7 @@ namespace Cw5.Controllers
                 signingCredentials: creds
             );
             var refreshToken = Guid.NewGuid();
-            _dbService.SetRefreshToken(refreshToken.ToString(), loginRequest.Index);
+            _dbService.SetRefreshToken( loginRequest.Index,refreshToken.ToString());
             return Ok(new {token = new JwtSecurityTokenHandler().WriteToken(token), refreshToken});
         }
 
@@ -96,8 +99,17 @@ namespace Cw5.Controllers
                 signingCredentials: creds
             );
             var refreshToken = Guid.NewGuid();
-            _dbService.SetRefreshToken(refreshToken.ToString(), user);
+            _dbService.SetRefreshToken(user, refreshToken.ToString());
             return Ok(new {token = new JwtSecurityTokenHandler().WriteToken(newToken), refreshToken});
+        }
+        [HttpPost("password")]
+        [Authorize]
+        public IActionResult SetPassword(ChangePasswordRequest request)
+        {
+            var index = User.Claims.ToList()[0].ToString().Split(": ")[1];
+            // Console.WriteLine(User.Claims.ToList());
+            _dbService.SetPassword(index,request.NewPassword);
+            return Ok("Password has been changed");
         }
     }
 }

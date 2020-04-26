@@ -450,3 +450,895 @@ Body Parameters: {
 	"BirthDate":"2009-01-06T17:16:40"
 
 }
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token 
+QueryString:POST 
+Method: ?=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollments/token 
+QueryString:POST 
+Method: ?=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollmentstoken 
+QueryString:POST 
+Method: ?=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollmentstoken 
+QueryString:POST 
+Method: ?=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollments/token/ 
+QueryString:POST 
+Method: ?=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollments/token/ 
+QueryString:POST 
+Method: ?=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollments/=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+QueryString:POST 
+Method: ?token 
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollments/=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+QueryString:POST 
+Method: ?token 
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollments/token/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/enrollments/token/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTIyNDc1LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.40wFoDwOdIhrt7QPtA3Ev6VdKl3Gd3RltE066IT9AQc 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"IndexNumber": "s5000",
+	"Studies": "Informatyka",
+	"FirstName":"Cezary",
+	"LastName":"Pazura",
+	"BirthDate":"2009-01-06T17:16:40"
+
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/token/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTI2Mzk0LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.JmNuq48wW42vBukD-Nh2udS-GVIzjeH_1mg3GHfxMfQ 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	Index:"1",
+	Password:"123"
+}
+Path: /api/enrollments/token/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiS1JaWVNaVE9GIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc3VybmFtZSI6Ik9MQlJZUyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImVtcGxveWVlIiwiZXhwIjoxNTg3OTI2Mzk0LCJpc3MiOiJHYWtrbyIsImF1ZCI6IlN0dWRlbnRzIn0.JmNuq48wW42vBukD-Nh2udS-GVIzjeH_1mg3GHfxMfQ 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	Index:"1",
+	Password:"123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/65c1f4c2-b2da-493a-98c6-535434828fa7 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/65c1f4c2-b2da-493a-98c6-535434828fa7 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/65c1f4c2-b2da-493a-98c6-535434828fa7 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/65c1f4c2-b2da-493a-98c6-535434828fa7 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/65c1f4c2-b2da-493a-98c6-535434828fa7 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/65c1f4c2-b2da-493a-98c6-535434828fa7 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/65c1f4c2-b2da-493a-98c6-535434828fa7 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/65c1f4c2-b2da-493a-98c6-535434828fa7 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/2e3019d8-a8ea-4533-b688-b9f41669f689 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/2e3019d8-a8ea-4533-b688-b9f41669f689 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/2e3019d8-a8ea-4533-b688-b9f41669f689 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/token/2e3019d8-a8ea-4533-b688-b9f41669f689 
+QueryString:POST 
+Method:  
+Body Parameters: 
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index"="1",
+	"OldPassword"="123",
+	"NewPassword"="alamakota"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index"="1",
+	"OldPassword"="123",
+	"NewPassword"="alamakota"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index"="1",
+	"OldPassword"="123",
+	"NewPassword"="alamakota"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index"="1",
+	"OldPassword"="123",
+	"NewPassword"="alamakota"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "123",
+	"NewPassword": "alamakota"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "123",
+	"NewPassword": "alamakota"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "123",
+	"NewPassword": "alamakota"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "123",
+	"NewPassword": "alamakota"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "123",
+	"NewPassword": "alamakota"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "123",
+	"NewPassword": "alamakota"
+}

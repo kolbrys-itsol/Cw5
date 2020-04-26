@@ -38,7 +38,6 @@ namespace Cw5
                     ValidIssuer = "Gakko",
                     ValidAudience = "Students",
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SecretKey"]))
-                    // IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("leszek"))
                 };
             });
             services.AddSwaggerGen(config =>

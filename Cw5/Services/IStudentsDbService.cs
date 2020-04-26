@@ -16,5 +16,6 @@ namespace Cw5.Services
         public Claim[] GetClaims(string id);
         public void SetRefreshToken(string id, string token);
         public string CheckRefreshToken(string token);
+        public void SetPassword(string id, string password);
     }
 }

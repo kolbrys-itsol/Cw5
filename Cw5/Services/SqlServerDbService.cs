@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using Cw5.Auth;
 using Cw5.DTOs.Requests;
 using Cw5.DTOs.Responses;
 using Cw5.Models;
@@ -190,7 +191,7 @@ namespace Cw5.Services
                 var reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    return loginRequest.Password.Equals(reader["Password"].ToString());
+                    return SecureHash.Validate(loginRequest.Password, reader["Salt"].ToString(), reader["Password"].ToString());
                 }
                 else
                 {
@@ -243,13 +244,13 @@ namespace Cw5.Services
                 new SqlConnection("Data Source=db-mssql;Initial Catalog=s18310;Integrated Security=True"))
             using (var command = new SqlCommand())
             {
+                //nie wiem czemu poniższa sqlka się nie wykonuje
                 command.Connection = connection;
                 connection.Open();
-                command.CommandText =
-                    "update Student set RefreshToken = @RefreshToken, TokenExpiration = @TokenExpiration where IndexNumber = @IndexNumber";
-                command.Parameters.AddWithValue("RefreshToken", token);
-                command.Parameters.AddWithValue("TokenExpiration", DateTime.Now.AddMinutes(15));
-                command.Parameters.AddWithValue("IndexNumber", id);
+                command.CommandText = "update Student set RefreshToken=@RefToken, TokenExpiration=@Expiration where IndexNumber=@IndexNum";
+                command.Parameters.AddWithValue("RefToken", token);
+                command.Parameters.AddWithValue("Expiration", DateTime.Now.AddMinutes(15).ToString());
+                command.Parameters.AddWithValue("IndexNum", id);
                 command.ExecuteNonQuery();
             }
         }
@@ -263,9 +264,10 @@ namespace Cw5.Services
                 command.Connection = connection;
                 connection.Open();
 
-                command.CommandText = "select IndexNumber from Student WHERE RefreshToken = @RefreshToken AND TokenExpiration > @TokenExpiration";
+                command.CommandText =
+                    "select IndexNumber from Student where RefreshToken = @RefreshToken and TokenExpiration > @TokenExpiration";
                 command.Parameters.AddWithValue("RefreshToken", token);
-                command.Parameters.AddWithValue("TokenExpiration", DateTime.Now);
+                command.Parameters.AddWithValue("TokenExpiration", DateTime.Now.ToString());
 
                 using var reader = command.ExecuteReader();
 
@@ -278,6 +280,28 @@ namespace Cw5.Services
                     return null;
                 }
             }
+        }
+
+        public void SetPassword(string id, string password)
+        {
+            using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=s18310;Integrated Security=True"))
+            using (var command = new SqlCommand())
+            {
+                command.Connection = connection;
+                connection.Open();
+
+                var salt = SecureHash.CreateSalt();
+                Console.WriteLine(salt);
+                var passwordHash = SecureHash.Create(password, salt);
+                command.CommandText = "update Student set Password=@Password, Salt=@Salt where IndexNumber=@IndexNumber";
+                command.Parameters.AddWithValue("Password", passwordHash);
+                command.Parameters.AddWithValue("Salt", salt);
+                command.Parameters.AddWithValue("IndexNumber", id);
+                command.ExecuteNonQuery();
+
+
+            }
+        
         }
     }
 }
