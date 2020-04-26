@@ -244,7 +244,6 @@ namespace Cw5.Services
                 new SqlConnection("Data Source=db-mssql;Initial Catalog=s18310;Integrated Security=True"))
             using (var command = new SqlCommand())
             {
-                //nie wiem czemu poniższa sqlka się nie wykonuje
                 command.Connection = connection;
                 connection.Open();
                 command.CommandText = "update Student set RefreshToken=@RefToken, TokenExpiration=@Expiration where IndexNumber=@IndexNum";

@@ -1342,3 +1342,123 @@ Body Parameters: {
 	"OldPassword": "123",
 	"NewPassword": "alamakota"
 }
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "123",
+	"NewPassword": "alamakota"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "123",
+	"NewPassword": "alamakota"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "alamakota"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "alamakota"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "alamakota"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "alamakota"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/students 
+QueryString:GET 
+Method:  
+Body Parameters: 
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "123"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "alamakota"
+}
+Path: /api/enrollments/login 
+QueryString:GET 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"Password": "alamakota"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "alamakota",
+	"NewPassword": "123"
+}
+Path: /api/enrollments/password 
+QueryString:POST 
+Method:  
+Body Parameters: {
+	"Index": "1",
+	"OldPassword": "alamakota",
+	"NewPassword": "123"
+}

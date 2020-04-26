@@ -107,7 +107,6 @@ namespace Cw5.Controllers
         public IActionResult SetPassword(ChangePasswordRequest request)
         {
             var index = User.Claims.ToList()[0].ToString().Split(": ")[1];
-            // Console.WriteLine(User.Claims.ToList());
             _dbService.SetPassword(index,request.NewPassword);
             return Ok("Password has been changed");
         }
