@@ -48,7 +48,7 @@ namespace Cw5.Controllers
             {
                 return Ok(_dbService.PromoteStudents(request));
             }
-            catch (SqlException e)
+            catch (Exception e)
             {
                 return NotFound(e.Message);
             }

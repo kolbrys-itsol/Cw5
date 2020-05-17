@@ -1,4 +1,5 @@
 ﻿using System;
+using Cw5.DTOs.Requests;
 using Cw5.Models;
 using Cw5.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -45,10 +46,11 @@ namespace Cw5.Controllers
 
 
         [HttpPut("{id}")]
-        public IActionResult UpdateStudent(string id)
+        public IActionResult UpdateStudent([FromBody] UpdateStudentRequest request, string id)
         {
             if (_dbService.GetStudent(id) != null)
             {
+                _dbService.UpdateStudent(request);
                 return Ok("Aktualizacja zakończona");
             }
             else
@@ -62,12 +64,10 @@ namespace Cw5.Controllers
         {
             if (_dbService.GetStudent(id) != null)
             {
+                _dbService.DeleteStudent(id);
                 return Ok("Usuwanie zakończone");
             }
-            else
-            {
-                return NotFound("Nie znaleziono studenta o tym id");
-            }
+            return NotFound("Nie znaleziono studenta o tym id");
         }
     }
 }

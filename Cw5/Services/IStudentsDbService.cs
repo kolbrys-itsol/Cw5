@@ -8,8 +8,11 @@ namespace Cw5.Services
 {
     public interface IStudentsDbService
     {
-        public IEnumerable<Student> GetStudents();
+        // public IEnumerable<Student> GetStudents();
+        public IEnumerable<GeneratedModels.Student> GetStudents();
         public Student GetStudent(string id);
+        public void DeleteStudent(string id);
+        public void UpdateStudent(UpdateStudentRequest request);
         public EnrollStudentResponse EnrollStudent(EnrollStudentRequest request);
         public EnrollStudentResponse PromoteStudents(PromoteStudentRequest request);
         public bool CheckPassword(LoginRequest request);
